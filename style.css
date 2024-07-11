@@ -1,0 +1,113 @@
+/*Stile del corpo della pagina*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Stile dell'H1*/
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 10em;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+/*Stile di sezione*/
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+}
+
+/*Stile del div di sezione*/
+section div {
+    width: 10%;
+    height: 100%;
+    background: #000;
+    transform: scaleY(0);
+    animation: animate 4s linear forwards;
+}
+
+/*Stile dei div pari sezione*/
+section div:nth-child(odd) {
+    transform-origin: top;
+}
+
+/*Stile dei div dispari di sezione*/
+section div:nth-child(even) {
+    transform-origin: bottom;
+}
+
+/*Stile del primo div*/
+section div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+/*Stile del secondo div*/
+section div:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+/*Stile del terzo div*/
+section div:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+/*Stile del quarto div*/
+section div:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+/*Stile del quinto div*/
+section div:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+/*Stile del sesto div*/
+section div:nth-child(6) {
+    animation-delay: 2s;
+}
+
+/*Stile del settimo div*/
+section div:nth-child(7) {
+    animation-delay: 2.4s;
+}
+
+/*Stile dell'ottavo div*/
+section div:nth-child(8) {
+    animation-delay: 2.8s;
+}
+
+/*Stile del nono div*/
+section div:nth-child(9) {
+    animation-delay: 3.2s;
+}
+
+/*Stile del decimo div*/
+section div:nth-child(10) {
+    animation-delay: 3.6s;
+}
+
+/*Animazione*/
+@keyframes animate {
+    0% {
+        transform: scaleY(0);
+    }
+    10%,90% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+
+}
